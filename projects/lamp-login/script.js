@@ -35,7 +35,7 @@ function onMove(e){
   if(!pulling) return;
   const y = (e.touches ? e.touches[0].clientY : e.clientY);
   let delta = Math.max(0, Math.min(40, y - startY));
-  root.style.setProperty("--pull", ${delta}px);
+  root.style.setProperty("--pull", `${delta}px`);
 
   const preview = Math.min(1, (delta / 40) * 0.35 + (isOn ? 1 : 0));
   setOn(preview);
@@ -60,5 +60,6 @@ window.addEventListener("mouseup", onUp);
 chain.addEventListener("touchstart", onDown, {passive:true});
 window.addEventListener("touchmove", onMove, {passive:true});
 window.addEventListener("touchend", onUp);
+chain.addEventListener("click", toggleLamp)
 
 setOn(0);

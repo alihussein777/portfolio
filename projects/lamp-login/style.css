@@ -20,7 +20,7 @@ body {
   display: grid;
   place-items: center;
   background: #121417;
-  transition: background .6s ease;
+  transition: background -6s ease;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
   color: var(--text);
 }
@@ -49,7 +49,7 @@ body {
   background: radial-gradient(circle at 25% 40%,
       rgba(255, 220, 150, calc(var(--on) * .55)) 0%,
       rgba(255, 220, 150, calc(var(--on) * .18)) 35%,
-      rgba(0, 0, 0, 0) 70%);
+      rgba(175, 36, 36, 0) 70%);
   pointer-events: none;
   transition: .6s ease;
 }
