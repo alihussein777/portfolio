@@ -188,6 +188,10 @@ input:focus {
   letter-spacing: .2px;
   background: linear-gradient(90deg, var(--gold2), var(--gold1), var(--gold2));
   box-shadow: 0 15px 35px rgba(214, 169, 74, .22);
+  transition: transform  .3s;
+}
+.btn:hover{
+  background: #473913;
 }
 
 @media (max-width: 800px) {
