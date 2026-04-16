@@ -11,9 +11,16 @@ form.addEventListener("submit", (e) => {
   const message = document.getElementById("message").value.trim();
 
   const mailto = `mailto:al.am.ali.19946@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(
-    Name: ${name}\nEmail: ${email}\n\n${message}
+   Name: ${name} \nEmail: ${email}\n\n${message}
   )}`;
 
   // open mail app
   window.location.href = mailto;
 });
+
+document.getElementById("email").value.trim();
+
+function(A){
+if( )
+}
+

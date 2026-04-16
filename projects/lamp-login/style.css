@@ -191,7 +191,7 @@ input:focus {
   transition: transform  .3s;
 }
 .btn:hover{
-  background: #473913;
+  background: #c59d2d;
 }
 
 @media (max-width: 800px) {
