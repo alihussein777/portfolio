@@ -282,13 +282,13 @@ nav li a:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
-/* From Uiverse.io by jolprince_5263 */ 
+/* Social Media Links */
 .card {
   max-width: fit-content;
-  border-radius: 15px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
   backdrop-filter: blur(15px);
@@ -297,6 +297,7 @@ nav li a:hover {
     inset 0 0 5px rgba(255, 255, 255, 0.274),
     0 5px 5px rgba(0, 0, 0, 0.164);
   transition: 0.5s;
+  margin:unset;
 }
 
 .card:hover {
@@ -340,7 +341,7 @@ nav li a:hover {
   border-radius: 5px;
   padding: 5px;
   transition: all 0.3s;
-  color: rgb(253, 253, 253);
+  color: white;
   background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
   z-index: 9999;
@@ -527,6 +528,9 @@ nav li a:hover {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 900px) {
+  .card {
+      margin:auto;
+  }
   .hero {
     flex-direction: column;
     text-align: center;
