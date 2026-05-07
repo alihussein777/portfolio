@@ -306,6 +306,7 @@ nav li a:hover {
 }
 
 .card ul {
+  max-width:fit-content
   padding: 1rem;
   display: flex;
   list-style: none;
