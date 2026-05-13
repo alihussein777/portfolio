@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
   }
 
   const mailto = `mailto:al.am.ali.19946@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\n\n${message}`
+    `Name: ${name}\nEmail: ${email}\n\n${message}`,
   )}`;
 
   window.location.href = mailto;
@@ -45,5 +45,3 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙";
   }
 });
-
-
