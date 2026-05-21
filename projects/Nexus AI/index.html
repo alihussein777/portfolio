@@ -1,123 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexus AI Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus AI Dashboard</title>
 
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
+  <aside class="sidebar">
+    <div class="logo"><span>Nexus</span>AI</div>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
+    <nav>
+      <a href="#" class="active"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+      <a href="#"><i class="fa-solid fa-robot"></i>AI Tools</a>
+      <a href="#"><i class="fa-solid fa-folder"></i>Projects</a>
+      <a href="#"><i class="fa-solid fa-chart-pie"></i>Analytics</a>
+      <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+    </nav>
+  </aside>
 
-        <div class="logo">
-            <span>Nexus</span>AI
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1>AI Dashboard</h1>
+        <p>Welcome back, Ali 👋</p>
+      </div>
+
+      <div class="top-actions">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search tools..." />
         </div>
 
-        <nav>
+        <button class="upgrade-btn">Upgrade Pro</button>
+      </div>
+    </header>
 
-            <a href="#" class="active">
-                <i class="fa-solid fa-chart-line"></i>
-                Dashboard
-            </a>
+    <section class="stats">
+      <div class="card" data-target="24" data-type="number">
+        <i class="fa-solid fa-folder-open"></i>
+        <h3>Projects</h3>
+        <h2>0</h2>
+      </div>
 
-            <a href="#">
-                <i class="fa-solid fa-robot"></i>
-                AI Tools
-            </a>
+      <div class="card" data-target="87" data-type="percent">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>AI Usage</h3>
+        <h2>0%</h2>
+      </div>
 
-            <a href="#">
-                <i class="fa-solid fa-folder"></i>
-                Projects
-            </a>
+      <div class="card" data-target="13" data-type="number">
+        <i class="fa-solid fa-list-check"></i>
+        <h3>Tasks</h3>
+        <h2>0</h2>
+      </div>
 
-            <a href="#">
-                <i class="fa-solid fa-chart-pie"></i>
-                Analytics
-            </a>
+      <div class="card" data-target="1.8" data-type="tb">
+        <i class="fa-solid fa-database"></i>
+        <h3>Storage</h3>
+        <h2>0TB</h2>
+      </div>
+    </section>
 
-            <a href="#">
-                <i class="fa-solid fa-gear"></i>
-                Settings
-            </a>
+    <section class="dashboard-grid">
+      <div class="ai-box">
+        <div class="ai-content">
+          <span class="tag">NEW AI SYSTEM</span>
+          <h2>Nexus AI Assistant</h2>
+          <p>Your futuristic AI workspace with analytics, automation, smart tools, and project management.</p>
+          <button id="launchBtn">Launch AI</button>
+        </div>
 
-        </nav>
+        <div class="ai-orb">
+          <i class="fa-solid fa-brain"></i>
+        </div>
 
-    </aside>
+        <div class="ai-glow"></div>
+      </div>
 
-    <!-- MAIN -->
-    <main class="main">
+      <div class="panel">
+        <h2>Performance</h2>
 
-        <!-- TOPBAR -->
-        <header class="topbar">
+        <div class="progress-item">
+          <div><span>Automation</span><b>92%</b></div>
+          <div class="bar"><span style="width: 92%"></span></div>
+        </div>
 
-            <div>
-                <h1>AI Dashboard</h1>
-                <p>Welcome back, Ali 👋</p>
-            </div>
+        <div class="progress-item">
+          <div><span>Productivity</span><b>78%</b></div>
+          <div class="bar"><span style="width: 78%"></span></div>
+        </div>
 
-            <button class="upgrade-btn">
-                Upgrade Pro
-            </button>
+        <div class="progress-item">
+          <div><span>AI Accuracy</span><b>88%</b></div>
+          <div class="bar"><span style="width: 88%"></span></div>
+        </div>
+      </div>
+    </section>
 
-        </header>
+    <section class="bottom-grid">
+      <div class="panel">
+        <h2>Recent Activity</h2>
 
-        <!-- STATS -->
-        <section class="stats">
+        <div class="activity">
+          <i class="fa-solid fa-check"></i>
+          <div>
+            <h4>Project generated</h4>
+            <p>Portfolio UI created successfully</p>
+          </div>
+        </div>
 
-            <div class="card">
-                <h3>Projects</h3>
-                <h2>24</h2>
-            </div>
+        <div class="activity">
+          <i class="fa-solid fa-robot"></i>
+          <div>
+            <h4>AI assistant updated</h4>
+            <p>New automation tools added</p>
+          </div>
+        </div>
 
-            <div class="card">
-                <h3>AI Usage</h3>
-                <h2>87%</h2>
-            </div>
+        <div class="activity">
+          <i class="fa-solid fa-cloud"></i>
+          <div>
+            <h4>Storage synced</h4>
+            <p>Files backed up securely</p>
+          </div>
+        </div>
+      </div>
 
-            <div class="card">
-                <h3>Tasks</h3>
-                <h2>13</h2>
-            </div>
+      <div class="panel">
+        <h2>AI Tools</h2>
 
-            <div class="card">
-                <h3>Storage</h3>
-                <h2>1.8TB</h2>
-            </div>
+        <div class="tools">
+          <button><i class="fa-solid fa-code"></i> Code AI</button>
+          <button><i class="fa-solid fa-image"></i> Image AI</button>
+          <button><i class="fa-solid fa-pen"></i> Writer AI</button>
+          <button><i class="fa-solid fa-chart-simple"></i> Data AI</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        </section>
-
-        <!-- AI SECTION -->
-        <section class="ai-box">
-
-            <div class="ai-content">
-
-                <h2>Nexus AI Assistant</h2>
-
-                <p>
-                    Your futuristic AI workspace with analytics,
-                    automation, and smart productivity tools.
-                </p>
-
-                <button>
-                    Launch AI
-                </button>
-
-            </div>
-
-            <div class="ai-glow"></div>
-
-        </section>
-
-    </main>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
